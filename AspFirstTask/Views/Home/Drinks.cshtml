@@ -1,0 +1,25 @@
+﻿@model AspFirstTask.Models.DrinkViewModel
+
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <link rel="stylesheet" href="~/css/site.css" />
+</head>
+
+<body>
+    <section style="background-color: red;border-radius: 10px;justify-content: space-around;margin: auto;width: 90%">
+        @foreach (var item in Model.drinks)
+        {
+            <div class="div">
+                <h1 style="text-align: center;">@item.drinkName</h1>
+                <h1 style="text-align: center;">@item.price AZN</h1>
+                <h1 style="text-align: center;">@item.calorie calorie</h1>
+            </div>
+        }
+    </section>
+</body>
+
+
+</html>

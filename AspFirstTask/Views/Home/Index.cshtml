@@ -5,38 +5,35 @@
 <html>
 
     <head>
-
+      <link rel="stylesheet" href="~/css/site.css" />
     </head>
 
     <body>
-    <section style="background-color: red;border-radius: 10px;justify-content: space-around;margin: auto;">
+    <section style="background-color: red;border-radius: 10px;justify-content: space-around;margin: auto;width: 90%">
            @foreach(var item in Model.drinks)
            {
-            <div style="background-color: rebeccapurple;margin: 1%;display: inline-block;width: 25%;margin: auto;margin-top: 3%;">
-                 <img scr="https://th.bing.com/th/id/R.3b7097732300bd1ac9a48d61c82ecfb4?rik=1%2f1Bl3id89ca9A&pid=ImgRaw&r=0" />
+            <div class="div">
                 <h1 style="text-align: center;">@item.drinkName</h1>
-                <h1 style ="text-align: center;">@item.price</h1>
-                <h1 style="text-align: center;">@item.calorie</h1>
+                <h1 style="text-align: center;">@item.price AZN</h1>
+                <h1 style="text-align: center;">@item.calorie calorie</h1>
              </div>
            }
 
         @foreach (var item in Model.fastFoods)
         {
-            <div style="background-color: rebeccapurple;margin: 1%;display: inline-block;width: 25%;margin: auto;margin-top: 3%;">
-                <img scr="https://th.bing.com/th/id/R.3b7097732300bd1ac9a48d61c82ecfb4?rik=1%2f1Bl3id89ca9A&pid=ImgRaw&r=0" />
+            <div class="div">
                 <h1 style="text-align: center;">@item.fastFoodName</h1>
-                <h1 style="text-align: center;">@item.price</h1>
-                <h1 style="text-align: center;">@item.calorie</h1>
+                <h1 style="text-align: center;">@item.price AZN</h1>
+                <h1 style="text-align: center;">@item.calorie calorie</h1>
             </div>
         }
 
         @foreach (var item in Model.hotMeals)
         {
-            <div style="background-color: rebeccapurple;margin: 1%;display: inline-block;width: 25%;margin: auto;margin-top: 3%;">
-                <img scr="https://th.bing.com/th/id/R.3b7097732300bd1ac9a48d61c82ecfb4?rik=1%2f1Bl3id89ca9A&pid=ImgRaw&r=0" />
+            <div class="div">
                 <h1 style="text-align: center;">@item.hotMealName</h1>
-                <h1 style="text-align: center;">@item.price</h1>
-                <h1 style="text-align: center;">@item.calorie</h1>
+                <h1 style="text-align: center;">@item.price AZN</h1>
+                <h1 style="text-align: center;">@item.calorie calorie</h1>
             </div>
         }
         </section>
